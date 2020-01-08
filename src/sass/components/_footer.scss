@@ -1,0 +1,84 @@
+// Song - Thumb
+.song__thumb {
+    display: flex;
+    margin: 15px;
+}
+
+.song__thumb--desc {
+    align-self: center;
+    margin: 0px 10px;
+
+    h2 {
+        color: $white;
+        font-size: 1.4rem;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    h3 {
+        color: $gray;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+.song__thumb--icons {
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    margin: 0px 5px;
+
+    p {
+        margin: 0px 5px;
+        color: $gray;
+        transition: all .3s ease;
+
+        &:hover {
+            cursor: pointer;
+            color: $white;
+        }
+    }
+}
+
+
+
+// Song - Player
+
+
+// Song - Options
+.song__options {
+    display: flex;
+}
+
+.song__options--icons {
+    color: $gray;
+    display: flex;
+    font-size: 1.4rem;
+    margin: 0px 5px;
+
+    p {
+        cursor: pointer;
+        margin: 0px 5px;
+        transition: all .3s ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.song__options--slider {
+    align-self: center;
+    background: $gray;
+    border-radius: 15px;
+    height: 7px;
+    margin: 0px 15px;
+    width: 120px;
+}

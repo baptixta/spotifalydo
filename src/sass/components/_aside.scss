@@ -1,0 +1,92 @@
+.nav {
+    margin-left: 35px;
+}
+
+.nav__logo {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    margin: 25px 0px 40px;
+
+    h2 {
+        color: $white;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+}
+
+/* 
+////////////////////////////////
+*/
+
+.nav__options {
+    ul {
+        color: $grayless;
+        font-size: 1.2rem;
+        list-style: none;
+        margin-bottom: 40px;
+
+        li {
+            margin: 18px 0px;
+            transition: all .3s ease;
+
+            &:hover {
+                cursor: pointer;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+/* 
+////////////////////////////////
+*/
+
+.nav__playlist {
+    h2 {
+        color: $grayless;
+        font-size: .9rem;
+        letter-spacing: 2.5px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.nav__playlist--add {
+    align-items: center;
+    color: $grayless;
+    display: flex;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $white;
+        cursor: pointer;
+    }
+
+    span {
+        font-size: 2.3rem;
+        margin-right: 10px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+.nav__playlist--list {
+    li {
+        color: $grayless;
+        margin: 12px 0px;
+
+        &:hover {
+            color: $white;
+            cursor: default;
+        }
+    }
+}

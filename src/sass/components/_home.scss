@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+     "aside content content content content content"
+     "footer footer footer footer footer footer";
+    height: 100vh;
+    position: relative;
+    }
+
+aside {
+    align-items: flex-start;
+    background: $blacker;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    justify-content: flex-start;
+    // max-width: 320px;
+}
+
+.content {
+    align-items: flex-start;
+    background: $gradient;
+    display: flex;
+    grid-area: content;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer {
+    align-items: center;
+    background: $black;
+    bottom: 0;
+    display: flex;
+    grid-area: footer;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
