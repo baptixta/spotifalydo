@@ -10,7 +10,7 @@
 
     h2 {
         color: $white;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
 
         &:hover {
             cursor: pointer;
@@ -20,6 +20,7 @@
 
     h3 {
         color: $gray;
+        font-size: 1rem;
 
         &:hover {
             cursor: pointer;
@@ -31,12 +32,12 @@
 .song__thumb--icons {
     align-items: center;
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     justify-content: center;
     margin: 0px 5px;
 
-    p {
-        margin: 0px 5px;
+    span {
+        margin: 0px 8px;
         color: $gray;
         transition: all .3s ease;
 
@@ -51,6 +52,38 @@
 
 // Song - Player
 
+.song__player--icons {
+    align-items: center;
+    display: flex;
+    font-size: 1.1rem;
+
+    span {
+        color: $grayless;
+        margin: 0px 15px;
+        transition: all .2s ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.fa-play-circle {
+    font-size: 2.3rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.song__player--slider {
+    align-self: center;
+    background: $gray;
+    border-radius: 15px;
+    height: 7px;
+    width: 100%;
+}
+
 
 // Song - Options
 .song__options {
@@ -60,10 +93,10 @@
 .song__options--icons {
     color: $gray;
     display: flex;
-    font-size: 1.4rem;
+    font-size: .9rem;
     margin: 0px 5px;
 
-    p {
+    span {
         cursor: pointer;
         margin: 0px 5px;
         transition: all .3s ease;
@@ -79,6 +112,6 @@
     background: $gray;
     border-radius: 15px;
     height: 7px;
-    margin: 0px 15px;
+    margin-right: 15px;
     width: 120px;
 }
