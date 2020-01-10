@@ -27,6 +27,12 @@ playlistCancel.addEventListener('click', () => {
 // Criar Playlist
 
 playlistCreate.addEventListener('click', () => {
-    // playlistList = document.createElement('li')
+    if(playlistInput.value !== '') {
+        let item = document.createElement('li');
+        item.innerHTML = `${playlistInput.value}`;
+        playlistList.appendChild(item);
+        playlist.style.display = "none";
+        playlistInput.value = '';
+    }
 })
 
