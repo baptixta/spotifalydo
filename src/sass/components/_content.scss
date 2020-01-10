@@ -127,3 +127,21 @@
     right: 10px;
     position: absolute;
 }
+
+
+/*
+/////////////
+Media Queries
+/////////////
+*/
+
+@media (max-width: 768px) {
+    .content__song {
+        width: 100%;
+    }
+
+    .content__album {
+        width: 90%;
+        align-self: center;
+    }
+}

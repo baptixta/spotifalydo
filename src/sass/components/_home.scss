@@ -20,7 +20,6 @@ aside {
     flex-direction: column;
     grid-area: aside;
     justify-content: flex-start;
-    // max-width: 320px;
 }
 
 .content {
@@ -31,6 +30,11 @@ aside {
     height: 100vh;
     justify-content: center;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
 }
 
 footer {
