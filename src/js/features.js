@@ -36,3 +36,22 @@ playlistCreate.addEventListener('click', () => {
     }
 })
 
+/* 
+//////////////////////////////
+*/
+
+let playButton = document.querySelector('.content__song--btn');
+let playButtonText = document.querySelector('.content__song--btn h2');
+
+playButtonText.innerHTML = 'PAUSE';
+
+// Play and Stop
+
+playButton.addEventListener('click', () => {
+    if(playButtonText.innerHTML == 'PAUSE') {
+        playButtonText.innerHTML = 'PLAY';
+    } 
+    else if (playButtonText.innerHTML == 'PLAY') {
+        playButtonText.innerHTML = 'PAUSE';
+    }
+})
