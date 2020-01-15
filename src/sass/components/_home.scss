@@ -11,6 +11,12 @@ main {
      "footer footer footer footer footer footer";
     height: 100vh;
     position: relative;
+
+        @media (max-width: 1200px) {
+            grid-template-areas:
+            "aside content content "
+            "footer footer footer";
+        }
     }
 
 aside {
@@ -31,7 +37,7 @@ aside {
     justify-content: center;
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         flex-direction: column;
         overflow-y: scroll;
     }

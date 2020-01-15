@@ -22,8 +22,8 @@
     }
 
     img {
-        height: 320px;
-        width: 320px;
+        height: auto;
+        width: 75%;
     }
 }
 
@@ -135,7 +135,7 @@ Media Queries
 /////////////
 */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .content__song {
         width: 100%;
     }
