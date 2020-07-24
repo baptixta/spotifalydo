@@ -1,2 +1,2 @@
 # spotifalydo
-estudo que fiz ai um dia
+> Estudo de HTML/CSS/JS
